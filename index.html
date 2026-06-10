@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цветочная лавка</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-spa me-2"></i>FlowerShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Каталог</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-menu-item dropdown-item" href="#">Свадебные букеты</a></li>
+                            <li><a class="dropdown-menu-item dropdown-item" href="#">Праздничные композиции</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Отзывы</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-light me-2"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">Вход</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-5">
+        <section class="hero-video mb-5">
+            <div class="container d-flex justify-content-center">
+                <div class="text-center w-100">
+                    <h2 class="mb-4">Как мы создаем букеты</h2>
+                    <div class="ratio ratio-16x9 mx-auto" style="max-width: 800px;">
+                        <iframe src="https://www.youtube.com/embed/I9X-cMX7ikA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mb-5">
+            <h2 class="text-center mb-4">Хиты продаж</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/1.jpg" class="card-img-top" alt="Букет">
+                        <div class="card-body">
+                            <h5 class="card-title">Романтический букет</h5>
+                            <p class="card-text">
+                                <span class="badge bg-success mb-2">Хит продаж</span><br>
+                                Розы 50 см, гипсофила, упаковка в крафтовую бумагу.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-success">3 490 ₽</span>
+                                <button class="btn btn-sm btn-outline-success"><i class="fas fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/2.jpg" class="card-img-top" alt="Букет">
+                        <div class="card-body">
+                            <h5 class="card-title">Свадебный букет</h5>
+                            <p class="card-text">
+                                <span class="badge bg-danger mb-2">Новинка</span><br>
+                                Пионы, эвкалипт, атласная лента.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-success">6 990 ₽</span>
+                                <button class="btn btn-sm btn-outline-success"><i class="fas fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="img/3.jpg" class="card-img-top" alt="Букет">
+                        <div class="card-body">
+                            <h5 class="card-title">Для любимой мамы</h5>
+                            <p class="card-text">
+                                <span class="badge bg-warning mb-2">Акция</span><br>
+                                Герберы, хризантемы, декоративная сетка.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-success">2 790 ₽</span>
+                                <button class="btn btn-sm btn-outline-success"><i class="fas fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mb-5">
+            <h2 class="text-center mb-4">Наши работы</h2>
+            <div class="row g-3">
+                <div class="col-md-4 col-6">
+                    <img src="img/4.webp" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="img/4.webp" alt="Галерея">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="img/5.jpg" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="img/5.jpg" alt="Галерея">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="img/6.jfif" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="img/6.jfif" alt="Галерея">
+                </div>
+            </div>
+        </section>
+
+        <section class="container mb-5">
+            <h2 class="text-center mb-4">Остались вопросы?</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Ваш email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Введите ваш email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Ваш телефон</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Введите ваш телефон">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Сообщение</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Введите ваше сообщение"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="agreement">
+                            <label class="form-check-label" for="agreement">Согласен с условиями обработки персональных данных</label>
+                        </div>
+                        <button type="submit" class="btn btn-success">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mb-5" id="reviews">
+            <h2 class="text-center mb-4">Что о нас говорят</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Елена</h5>
+                            <div class="text-warning mb-2">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text">Заказывала букет "Романтика" на день рождения подруги. Букет очень красивый, свежие цветы, быстрая доставка!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Дмитрий</h5>
+                            <div class="text-warning mb-2">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            </div>
+                            <p class="card-text">Брал букет на свадьбу, все гости были в восторге! Спасибо за качественную работу и индивидуальный подход!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Контакты</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>Москва, Цветочная ул. 1</p>
+                    <p><i class="fas fa-phone me-2"></i>+7 (495) 123-45-67</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Соцсети</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-vk fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-telegram fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Подписка</h5>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control" placeholder="Email для рассылки">
+                        <button class="btn btn-success" type="button">Подписаться</button>
+                    </div>
+                    <small class="text-muted">Подпишитесь на новости и акции</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <img src="" id="modalImage" class="img-fluid w-100" alt="Увеличенное изображение">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Авторизация</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginUser" class="form-label">Логин</label>
+                            <input type="text" class="form-control" id="loginUser" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="passwordUser" class="form-label">Пароль</label>
+                            <input type="password" class="form-control" id="passwordUser" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Войти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        const galleryModal = document.getElementById('galleryModal')
+        galleryModal.addEventListener('show.bs.modal', event => {
+            const img = event.relatedTarget
+            const imgSrc = img.getAttribute('data-bs-img')
+            const modalImage = galleryModal.querySelector('#modalImage')
+            modalImage.src = imgSrc
+        })
+    </script>
+</body>
+</html>

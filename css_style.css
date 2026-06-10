@@ -1,0 +1,67 @@
+/* Основные стили */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body > * {
+    flex-shrink: 0;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* Логотип */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Эффекты для карточек товаров */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Миниатюры галереи */
+.img-thumbnail {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.03);
+}
+
+/* Подвал */
+footer {
+    background: linear-gradient(45deg, #1f2d1d, #141f13);
+}
+
+.social-links a {
+    transition: opacity 0.2s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .hero-video h2 {
+        font-size: 1.5rem;
+    }
+}
